@@ -5,3 +5,4 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+vim.cmd([[set relativenumber]])

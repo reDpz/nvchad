@@ -11,7 +11,7 @@ M.override = {
   },
   CursorLineNr = {
     fg = "black",
-    bg = "white"
+    bg = "#bdae93"
   },
   LineNr = {
     bg = "black2"

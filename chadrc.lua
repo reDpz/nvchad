@@ -14,9 +14,6 @@ M.ui = {
   statusline = {
     theme = "vscode_colored"
   },
-
-  -- statusline = {
-    --theme = "block", -- default/vscode/vscode_colored/minimal
 }
 
 M.override = {
