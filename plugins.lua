@@ -5,6 +5,21 @@ local plugins = {
 
   -- Override plugin definition options
 
+  -- disable statusline
+  {
+  "NvChad/ui" , 
+  config = function()
+    require "nvchad_ui"
+    vim.opt.statusline = ""
+  end
+  },
+  {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+    config = function()
+      require('lualine').setup()
+    end,
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
