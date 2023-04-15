@@ -5,4 +5,5 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+-- vim.cmd([[Lazy load lualine.nvim]])
 vim.cmd([[set relativenumber]])
