@@ -46,6 +46,12 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    'xuhdev/vim-latex-live-preview',
+    config = function()
+      vim.cmd([[let g:livepreview_previewer = 'zathura']])
+    end,
+  }
 
   -- To make a plugin not be loaded
   -- {

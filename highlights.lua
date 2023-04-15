@@ -7,15 +7,16 @@ local M = {}
 ---@type Base46HLGroupsList
 M.override = {
   CursorLine = {
-    bg = "black2"
+    bg = "lightbg"
   },
   CursorLineNr = {
-    fg = "black",
-    bg = "#bdae93"
+    fg = "yellow",
+    bold = true,
+    bg = "lightbg"
   },
-  LineNr = {
-    bg = "black2"
-  },
+  -- LineNr = {
+  --   bg = "black2"
+  -- },
   Comment = {
     italic = true,
   },
@@ -24,6 +25,7 @@ M.override = {
     fg = "black"
   },
 }
+
 
 ---@type HLTable
 M.add = {
