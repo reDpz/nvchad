@@ -3,6 +3,7 @@
 #### backup your previous files
 ```shell
 mkdir -p ~/nvim/previous
+rm -rf ~/nvim/previous/* # this will delete any previous backups, be aware of this
 mv ~/.config/nvim ~/nvim/previous/nvim
 mv ~/.local/share/nvim ~/nvim/previous/share
 mv ~/.local/state/nvim ~/nvim/previous/state
