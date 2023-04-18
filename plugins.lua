@@ -236,6 +236,13 @@ let g:mkdp_theme = 'dark']])
       autolist.create_mapping_hook("n", "<leader>x", autolist.invert_entry, "")
     end,
   },
+  {
+    "startup-nvim/startup.nvim",
+    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    config = function()
+      require"startup".setup()
+    end
+  },
 
   -- To make a plugin not be loaded
   -- {
