@@ -109,10 +109,8 @@ local plugins = {
   },
   {
     'iamcco/markdown-preview.nvim',
-    lazy = false,
-    run = "cd app && npm install",
-    setup = function()
-      vim.g.mkdp_filetypes = { "markdown" }
+    build = function()
+      vim.fn['mkdp#util#install']()
     end,
     ft = { "markdown" },
     config = function()
@@ -152,7 +150,7 @@ let g:mkdp_open_ip = ''
 " valid: `/path/with\ space/xxx`
 " invalid: `/path/with\\ space/xxx`
 " default: ''
-let g:mkdp_browser = '/usr/bin/firefox'
+" let g:mkdp_browser = '/usr/bin/firefox'
 
 " set to 1, echo preview page url in command line when open preview page
 " default is 0
