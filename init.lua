@@ -6,4 +6,9 @@
 --   command = "tabdo wincmd =",
 -- })
 -- vim.cmd([[Lazy load lualine.nvim]])
-vim.cmd([[set relativenumber]])
+vim.cmd([[
+" allows for easier navigation
+set relativenumber
+" wraps around whole words instead of singular letters
+set linebreak
+]])
