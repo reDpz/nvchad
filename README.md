@@ -1,6 +1,5 @@
 # NvChad config
-This is a short guide detailing how to install nvchad + my config for both windows and linux, if you are on windows please scroll down to [Windows](/page/https://github.com/reDpz/nvchad#windows)
-## Linux
+This is a short guide detailing how to install nvchad + my config for both windows and linux, if you are on windows please scroll down to Windows
 
 #### backup your previous files
 ```shell
