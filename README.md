@@ -56,7 +56,7 @@ scoop install neovim
 
 ### Install nvchad
 
-Run this in any 
+Run this
 ```shell
 # Clean directories (not necessary if there is no previous installation)
 mkdir -p ~/nvim/previous
