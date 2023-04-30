@@ -17,6 +17,13 @@ M.override = {
   LineNr = {
     bg = "black2"
   },
+  SignColumn = {
+    fg = "black2",
+    bg = "black2"
+  },
+  WhichKeyGroup  = {
+    bg = "black2"
+  },
   Comment = {
     fg="#665c54",
     -- bg="black",
