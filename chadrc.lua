@@ -15,6 +15,8 @@ M.ui = {
     separator_style= "block",
     theme = "vscode_colored",
   },
+
+  transparency = true,
 }
 
 M.override = {
