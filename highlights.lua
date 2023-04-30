@@ -14,11 +14,11 @@ M.override = {
     bold = true,
     bg = "lightbg"
   },
-  -- LineNr = {
-  --   bg = "black2"
-  -- },
+  LineNr = {
+    bg = "black2"
+  },
   Comment = {
-    -- fg="#665c54",
+    fg="#665c54",
     -- bg="black",
     italic = true,
   },
