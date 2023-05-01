@@ -80,7 +80,12 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = {
+      overrides.mason,
+      ensure_installed = {
+        "rust-analyzer",
+      }
+    }
   },
 
   {
@@ -277,6 +282,19 @@ let g:mkdp_theme = 'dark']])
         require('pretty-fold').setup()
      end
   },
+  'sainnhe/gruvbox-material',
+  {
+    'rust-lang/rust.vim',
+    ft = "rust",
+    init = function ()
+      vim.g.rustfmt_autosave = 1
+    end
+  },
+  {
+    'sheerun/vim-polyglot',
+    lazy = false,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

@@ -3,6 +3,8 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
+local util = require "lspconfig/util"
+
 -- if you just want default config for the servers then put them in a table
 local servers = { "html", "cssls", "tsserver", "clangd" }
 
@@ -15,3 +17,15 @@ end
 
 -- 
 -- lspconfig.pyright.setup { blabla}
+
+lspconfig.rust_analyzer.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"rust"},
+  root_dir = util.root_pattern("Cargo.Toml"),
+  settings = {
+    cargo = {
+      allFeatures = true,
+    }
+  },
+})

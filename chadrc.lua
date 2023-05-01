@@ -16,7 +16,7 @@ M.ui = {
     theme = "vscode_colored",
   },
 
-  transparency = true,
+  transparency = false,
 }
 
 M.override = {
