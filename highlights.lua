@@ -30,7 +30,7 @@ M.override = {
     italic = true,
   },
   Visual = {
-    bg = "white",
+    bg = "yellow",
     fg = "black"
   },
 }
